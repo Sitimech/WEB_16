@@ -1,0 +1,55 @@
+#field {
+  margin: 0 auto;
+}
+
+td {
+  background-color: greenyellow;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid yellow;
+}
+
+td:hover:after{
+  content:'Видалити панель';
+  position: absolute;
+  left: 100%;
+  top: -1em;
+  z-index: 2;
+  background: #fff;
+  border: 1px solid red;
+  color: red;
+  width: max-content;
+  padding: 3px;
+}
+
+td.empty:hover:after{
+  content:'Вставити';
+  position: absolute;
+  left: 100%;
+ top: -1em;
+  z-index: 2;
+  background: #fff;
+  border: 1px solid red;
+  color: green;
+  width: max-content;
+  padding: 3px;
+}
+ 
+.empty {
+  background-color: white;
+}
+
+#price{
+  color: #fff;
+  text-decoration: none; 
+  user-select: none; 
+  background: rgb(62, 255, 62); 
+  padding: .7em 1.5em; 
+  outline: none; 
+  border: 0px;
+  font-family: Verdana;
+}
+#price:hover{
+  background: greenyellow;
+  transition: 1.5s;
+}
